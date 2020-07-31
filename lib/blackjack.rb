@@ -35,6 +35,7 @@ end
 def hit?(current_total)
   prompt_user
   action = get_user_input.downcase
+  binding.pry
   if action == 's'
     current_total
     return stay = true 
