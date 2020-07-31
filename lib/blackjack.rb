@@ -47,7 +47,6 @@ def hit?(current_total)
     prompt_user
     action = get_user_input.downcase
   end 
-  binding.pry
 end
 
 
@@ -63,8 +62,7 @@ def runner
   current_total = initial_round
   stay = false 
   until current_total > 21 or stay == true 
-    hit?(current_total)
-    binding.pry
+    current_total = hit?(current_total)
     display_card_total(current_total)
   end 
 end_game(current_total)
