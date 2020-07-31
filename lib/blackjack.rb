@@ -37,7 +37,7 @@ def hit?(current_total)
   action = get_user_input.downcase
   if action == 's'
     current_total
-    stay = true 
+    return stay = true 
   elsif action == 'h'
     current_total = current_total + deal_card
     return current_total
