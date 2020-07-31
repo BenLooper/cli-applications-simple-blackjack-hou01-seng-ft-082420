@@ -41,7 +41,8 @@ def hit?(current_total)
   if action == 's'
     current_total
     binding.pry
-    return stay = true 
+    stay = true 
+    return stay 
   elsif action == 'h'
     current_total = current_total + deal_card
     return current_total
