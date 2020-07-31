@@ -62,7 +62,7 @@ def runner
   stay = false 
   until current_total > 21 or stay == true 
     hit?(current_total)
-    stay = true 
+    binding.pry
     display_card_total(current_total)
   end 
 end_game(current_total)
