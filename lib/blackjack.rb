@@ -32,12 +32,15 @@ def initial_round
   first_card + second_card
 end
 
+
+
 def hit?(current_total)
   prompt_user
   action = get_user_input.downcase
   binding.pry
   if action == 's'
     current_total
+    binding.pry
     return stay = true 
   elsif action == 'h'
     current_total = current_total + deal_card
@@ -49,13 +52,13 @@ def hit?(current_total)
   end 
 end
 
+
+
 def invalid_command
   puts "Please enter a valid command"
 end
 
-#####################################################
-# get every test to pass before coding runner below #
-#####################################################
+
 
 def runner
   welcome 
