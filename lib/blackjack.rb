@@ -39,7 +39,6 @@ def hit?(current_total)
   action = get_user_input.downcase
   if action == 's'
     current_total
-    stay = true 
   elsif action == 'h'
     current_total = current_total + deal_card
   else 
@@ -61,7 +60,7 @@ def runner
   welcome 
   current_total = initial_round
   stay = false 
-  until current_total > 21 or stay == true 
+  until current_total > 21  
     current_total = hit?(current_total)
     display_card_total(current_total)
   end 
