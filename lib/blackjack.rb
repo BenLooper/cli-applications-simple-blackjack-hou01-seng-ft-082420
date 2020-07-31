@@ -37,14 +37,14 @@ end
 def hit?(current_total)
   prompt_user
   action = get_user_input.downcase
-  binding.pry
+  bindin.pry
   if action == 's'
     current_total
-    binding.pry
     stay = true 
     return stay 
   elsif action == 'h'
     current_total = current_total + deal_card
+    binding.pry
     return current_total
   else 
     invalid_command
